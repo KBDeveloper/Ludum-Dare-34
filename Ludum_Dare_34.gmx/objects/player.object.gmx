@@ -103,7 +103,7 @@ instance_create(0 ,0 ,obj_enemy)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (sprn &lt;= 5) {
+            <string>if (sprn &lt; 5) {
     sprn += 1
     alarm[0] = 450
     }
