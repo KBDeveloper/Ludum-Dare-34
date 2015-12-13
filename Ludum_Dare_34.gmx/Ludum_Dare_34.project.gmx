@@ -10,14 +10,19 @@
     <sprite>sprites\spr_player_state2</sprite>
     <sprite>sprites\spr_player_state3</sprite>
     <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_enemy</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_enemy1</path>
+    <path>paths\path_enemy2</path>
+  </paths>
   <objects name="objects">
     <object>objects\player</object>
     <object>objects\obj_bullet</object>
+    <object>objects\obj_enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
