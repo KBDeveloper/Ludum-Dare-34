@@ -55,8 +55,9 @@ alarm[5] = firespd
 }
 alarm[5] = firespd
 bul = instance_create(x, y, obj_bullet_enemy)
-bul.dir = random_range(-45, -135)
+bul.dir = random_range(0, 360)
 bul.spd = 4.5
+
 
 </string>
           </argument>
