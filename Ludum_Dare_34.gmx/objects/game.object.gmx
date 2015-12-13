@@ -51,6 +51,7 @@ health = 100
             <kind>1</kind>
             <string>draw_set_color(c_white)
 draw_text(16 ,16 ,"Score: " + string(scr))
+draw_healthbar(16, 32, 256, 48, health, c_gray, c_red, c_green, 0, true, false)
 </string>
           </argument>
         </arguments>
