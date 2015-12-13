@@ -25,35 +25,11 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>120</string>
+            <string>450</string>
           </argument>
           <argument>
             <kind>4</kind>
             <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>120*2</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -76,6 +52,8 @@
             <string>sprite[1] = spr_player_state1
 sprite[2] = spr_player_state2
 sprite[3] = spr_player_state3
+sprite[4] = spr_player_state4
+sprite[5] = spr_player_state5
 sprn = 1
 alarm[10] = 120
 
@@ -108,29 +86,6 @@ instance_create(0 ,0 ,obj_enemy)
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>sprn = sprn+1
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -148,7 +103,14 @@ instance_create(0 ,0 ,obj_enemy)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprn = sprn+1
+            <string>if (sprn &lt;= 5) {
+    sprn += 1
+    alarm[0] = 450
+    }
+else {
+    alarm[0] = -1
+    }
+
 </string>
           </argument>
         </arguments>
