@@ -82,6 +82,7 @@ if (global.bullt &gt; 10) {
           <argument>
             <kind>1</kind>
             <string>instance_destroy()
+game.scr += 10
 </string>
           </argument>
         </arguments>
