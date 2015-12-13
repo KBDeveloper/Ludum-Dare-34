@@ -33,7 +33,8 @@
   </objects>
   <timelines name="timelines"/>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_game</room>
+    <room>rooms\rm_end</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

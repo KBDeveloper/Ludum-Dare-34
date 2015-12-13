@@ -78,7 +78,7 @@ sprite[2] = spr_player_state2
 sprite[3] = spr_player_state3
 sprn = 1
 alarm[10] = 120
-health = 100
+
 </string>
           </argument>
         </arguments>
@@ -200,7 +200,7 @@ if (x &gt; room_width-48) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health -= 10
+            <string>game.hlth -= 10
 </string>
           </argument>
         </arguments>
@@ -223,7 +223,7 @@ if (x &gt; room_width-48) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>health -= 50
+            <string>game.hlth -= 50
 </string>
           </argument>
         </arguments>
