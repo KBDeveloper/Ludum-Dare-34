@@ -24,6 +24,9 @@
     <path>paths\path_enemy4</path>
     <path>paths\path_enemy5</path>
   </paths>
+  <fonts name="fonts">
+    <font>fonts\fnt_1</font>
+  </fonts>
   <objects name="objects">
     <object>objects\player</object>
     <object>objects\obj_bullet</object>
@@ -32,7 +35,6 @@
     <object>objects\game</object>
     <object>objects\obj_gameover</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
     <room>rooms\rm_end</room>
