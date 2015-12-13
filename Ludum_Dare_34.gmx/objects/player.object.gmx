@@ -78,6 +78,7 @@ sprite[2] = spr_player_state2
 sprite[3] = spr_player_state3
 sprn = 1
 alarm[10] = 120
+health = 100
 </string>
           </argument>
         </arguments>
@@ -100,7 +101,7 @@ alarm[10] = 120
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[10] = 120
+            <string>alarm[10] = 100
 instance_create(0 ,0 ,obj_enemy)
 </string>
           </argument>
@@ -193,7 +194,7 @@ instance_create(0 ,0 ,obj_enemy)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_restart()
+            <string>health -= 10
 </string>
           </argument>
         </arguments>
@@ -216,7 +217,7 @@ instance_create(0 ,0 ,obj_enemy)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_restart()
+            <string>health -= 50
 </string>
           </argument>
         </arguments>
