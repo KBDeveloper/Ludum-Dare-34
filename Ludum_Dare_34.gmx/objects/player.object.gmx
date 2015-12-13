@@ -107,8 +107,9 @@ instance_create(0 ,0 ,obj_enemy)
     sprn += 1
     alarm[0] = 450
     }
-else
+else {
     alarm[0] = -1
+    }
 
 </string>
           </argument>
