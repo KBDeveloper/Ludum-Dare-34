@@ -13,6 +13,8 @@
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_bullet_enemy</sprite>
     <sprite>sprites\spr_gameover</sprite>
+    <sprite>sprites\spr_player_state4</sprite>
+    <sprite>sprites\spr_player_state5</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>

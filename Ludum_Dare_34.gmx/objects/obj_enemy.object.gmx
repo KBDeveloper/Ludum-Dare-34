@@ -50,7 +50,7 @@ alarm[5] = 150
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[5] = 30
+            <string>alarm[5] = 80
 bul = instance_create(x, y, obj_bullet_enemy)
 bul.dir = random_range(-45, -135)
 bul.spd = 4.5
