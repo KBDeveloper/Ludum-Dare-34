@@ -8,6 +8,7 @@
     <sound>sound\snd_health</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_splash</sprite>
     <sprite>sprites\spr_player_state1</sprite>
     <sprite>sprites\spr_player_state2</sprite>
     <sprite>sprites\spr_player_state3</sprite>
@@ -33,6 +34,7 @@
     <font>fonts\fnt_1</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_splash</object>
     <object>objects\player</object>
     <object>objects\obj_bullet</object>
     <object>objects\obj_enemy</object>
@@ -42,6 +44,7 @@
     <object>objects\obj_powerup_health</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_splash</room>
     <room>rooms\rm_game</room>
     <room>rooms\rm_end</room>
   </rooms>
