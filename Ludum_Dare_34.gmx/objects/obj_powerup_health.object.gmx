@@ -49,6 +49,7 @@
           <argument>
             <kind>1</kind>
             <string>game.hlth = game.hlth+75
+audio_play_sound(snd_health, 10, false)
 instance_destroy()
 </string>
           </argument>

@@ -79,7 +79,7 @@ alarm[10] = 120
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[10] = 100
+            <string>alarm[10] = 50
 instance_create(0 ,0 ,obj_enemy)
 </string>
           </argument>
