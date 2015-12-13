@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_health</sound>
+    <sound>sound\snd_chiptune</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_splash</sprite>
