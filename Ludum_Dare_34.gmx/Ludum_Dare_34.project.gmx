@@ -11,6 +11,7 @@
     <sprite>sprites\spr_player_state3</sprite>
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_bullet_enemy</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -18,12 +19,19 @@
   <paths name="paths">
     <path>paths\path_enemy1</path>
     <path>paths\path_enemy2</path>
+    <path>paths\path_enemy3</path>
+    <path>paths\path_enemy4</path>
+    <path>paths\path_enemy5</path>
   </paths>
   <objects name="objects">
     <object>objects\player</object>
     <object>objects\obj_bullet</object>
     <object>objects\obj_enemy</object>
+    <object>objects\obj_bullet_enemy</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline0</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
