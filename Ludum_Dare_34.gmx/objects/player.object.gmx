@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>900</string>
+            <string>120</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>1800</string>
+            <string>120*2</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -73,9 +73,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite[1] = "spr_player_state1"
-sprite[2] = "spr_player_state2"
-sprite[3] = "spr_player_state3"
+            <string>sprite[1] = spr_player_state1
+sprite[2] = spr_player_state2
+sprite[3] = spr_player_state3
 sprn = 1
 </string>
           </argument>
@@ -146,6 +146,32 @@ sprn = 1
           <argument>
             <kind>1</kind>
             <string>sprite_index = sprite[sprn]
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>obj = instance_create(x, y, obj_bullet)
+obj.dir = choose(0, 45, 90, 90+45, 180, 270)
+obj.spd = 3
+
 </string>
           </argument>
         </arguments>
