@@ -80,6 +80,9 @@ instance_create(xx, yy, obj_powerup_health)
             <string>if (hlth &lt;= 0) {
     room_goto(rm_end)
 }
+if (hlth &gt;= 100) {
+    hlth = 100
+}
 </string>
           </argument>
         </arguments>
