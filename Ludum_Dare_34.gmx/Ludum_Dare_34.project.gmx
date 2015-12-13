@@ -29,6 +29,7 @@
     <object>objects\obj_bullet</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_bullet_enemy</object>
+    <object>objects\game</object>
   </objects>
   <timelines name="timelines"/>
   <rooms name="rooms">

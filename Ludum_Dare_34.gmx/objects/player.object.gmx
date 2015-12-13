@@ -172,6 +172,12 @@ instance_create(0 ,0 ,obj_enemy)
           <argument>
             <kind>1</kind>
             <string>sprite_index = sprite[sprn]
+if (x &lt; 48) {
+    x = 48
+}
+if (x &gt; room_width-48) {
+    x = room_width-48
+}
 </string>
           </argument>
         </arguments>
