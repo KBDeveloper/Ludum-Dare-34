@@ -194,13 +194,14 @@ if (x &gt; room_width-48) {
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
             <string>game.hlth -= 10
+instance_destroy()
 </string>
           </argument>
         </arguments>
@@ -217,13 +218,14 @@ if (x &gt; room_width-48) {
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
             <string>game.hlth -= 50
+instance_destroy()
 </string>
           </argument>
         </arguments>

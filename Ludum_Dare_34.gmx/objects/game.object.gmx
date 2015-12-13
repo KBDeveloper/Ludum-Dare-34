@@ -49,7 +49,9 @@ hlth = 100
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hlth
+            <string>if (hlth &lt;= 0) {
+    room_goto(rm_end)
+}
 </string>
           </argument>
         </arguments>
