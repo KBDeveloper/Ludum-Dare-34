@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>path_start(choose(path_enemy1 ,path_enemy2 ,path_enemy3 ,path_enemy4 ,path_enemy5) ,4 ,path_action_stop, true)
-alarm[5] = 150
-
+firespd = 70
+alarm[5] = firespd
 </string>
           </argument>
         </arguments>
@@ -50,7 +50,10 @@ alarm[5] = 150
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[5] = 80
+            <string>if (firespd &gt; 15) {
+    firespd = firespd-10
+}
+alarm[5] = firespd
 bul = instance_create(x, y, obj_bullet_enemy)
 bul.dir = random_range(-45, -135)
 bul.spd = 4.5

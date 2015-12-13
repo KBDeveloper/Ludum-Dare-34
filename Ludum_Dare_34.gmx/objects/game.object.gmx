@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr = 0
+            <string>randomize()
+scr = 0
 hlth = 100
 </string>
           </argument>
