@@ -11,30 +11,6 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>450</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -55,9 +31,9 @@ sprite[3] = spr_player_state3
 sprite[4] = spr_player_state4
 sprite[5] = spr_player_state5
 sprn = 1
+alarm[0] = 540
 alarm[10] = 120
 bullettime = 0
-alarm[7] = 100
 
 </string>
           </argument>
@@ -82,40 +58,13 @@ alarm[7] = 100
           <argument>
             <kind>1</kind>
             <string>alarm[10] = 50
-if (irandom(20) = 0) {
+if (irandom(12) = 0 &amp;&amp; game.scr &gt; 70 &amp;&amp; instance_number(obj_boss) &lt; 2) {
     instance_create(0, 0, obj_boss)
 }
 else {
     if (instance_number(obj_boss) &lt; 1) {
         instance_create(0 ,0 ,obj_enemy)
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="7">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Turns Alarm 0 on
-//Turns on alarm loop for growing if powerup is collected
-if (sprn &lt; 5) {
-    alarm[0] = 30
 }
 </string>
           </argument>
@@ -142,11 +91,8 @@ if (sprn &lt; 5) {
             <string>/// Growing Loop
 if (sprn &lt; 5) {
     sprn += 1
-    alarm[0] = 450
-    }
-else {
-    alarm[0] = -1
-    }
+    alarm[0] = 540
+}
 
 </string>
           </argument>
