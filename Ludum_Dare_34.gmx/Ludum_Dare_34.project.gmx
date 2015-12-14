@@ -22,6 +22,7 @@
     <sprite>sprites\spr_player_state5</sprite>
     <sprite>sprites\spr_powerup_health</sprite>
     <sprite>sprites\spr_powerup_smaller</sprite>
+    <sprite>sprites\spr_boss</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
