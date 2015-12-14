@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_chiptune, 5, true)
+            <string>audio_stop_all()
+audio_play_sound(snd_chiptune, 5, true)
 randomize()
 scr = 0
 hlth = 100
