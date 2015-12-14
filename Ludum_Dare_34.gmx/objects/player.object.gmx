@@ -269,7 +269,7 @@ instance_destroy()
     }
 }
 else {
-    audio_play_sound(snd_health, 10, false) 
+    audio_play_sound(snd_no, 10, false) 
 }
 </string>
           </argument>
