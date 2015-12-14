@@ -82,7 +82,14 @@ alarm[7] = 100
           <argument>
             <kind>1</kind>
             <string>alarm[10] = 50
-instance_create(0 ,0 ,obj_enemy)
+if (irandom(20) = 0) {
+    instance_create(0, 0, obj_boss)
+}
+else {
+    if (instance_number(obj_boss) &lt; 1) {
+        instance_create(0 ,0 ,obj_enemy)
+    }
+}
 </string>
           </argument>
         </arguments>

@@ -41,6 +41,7 @@
     <object>objects\player</object>
     <object>objects\obj_bullet</object>
     <object>objects\obj_enemy</object>
+    <object>objects\obj_boss</object>
     <object>objects\obj_bullet_enemy</object>
     <object>objects\game</object>
     <object>objects\obj_gameover</object>
