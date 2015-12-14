@@ -56,6 +56,7 @@ sprite[4] = spr_player_state4
 sprite[5] = spr_player_state5
 sprn = 1
 alarm[10] = 120
+bullettime = 0
 
 </string>
           </argument>
@@ -139,6 +140,9 @@ if (x &lt; 48) {
 }
 if (x &gt; room_width-48) {
     x = room_width-48
+}
+if (bullettime &gt; 0) {
+    bullettime -= 1
 }
 </string>
           </argument>
@@ -256,10 +260,41 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj = instance_create(x, y, obj_bullet)
-obj.dir = random_range(45, 135)
-obj.spd = 3
-
+            <string>if (bullettime = 0) {
+    repeat(3) {
+        obj = instance_create(x, y, obj_bullet)
+        obj.dir = random_range(45, 135)
+        obj.spd = 7.5
+        bullettime = 30
+    }
+}
+else {
+    audio_play_sound(snd_health, 10, false) 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self()
+draw_healthbar(x-58, y-30, x-48, y+16, bullettime*100/30, c_gray, c_red, c_red, 3, false, false)
 </string>
           </argument>
         </arguments>
