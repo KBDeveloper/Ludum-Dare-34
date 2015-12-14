@@ -28,6 +28,7 @@
             <string>path_start(choose(path_enemy1 ,path_enemy2 ,path_enemy3 ,path_enemy4 ,path_enemy5) ,4 ,path_action_stop, true)
 firespd = 70
 alarm[5] = firespd
+image_speed = 7
 </string>
           </argument>
         </arguments>
