@@ -296,8 +296,9 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (bullettime = 0) {
-    repeat(3) {
+            <string>/// Bullet Firing
+if (bullettime = 0) {
+    repeat(5) {
         obj = instance_create(x, y, obj_bullet)
         obj.dir = random_range(45, 135)
         obj.spd = 7.5
