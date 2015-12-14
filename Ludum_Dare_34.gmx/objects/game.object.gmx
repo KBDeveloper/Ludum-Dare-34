@@ -56,7 +56,7 @@ alarm[11] = 900
             <string>alarm[11] = 900
 xx = random_range(32, room_width-32)
 yy = -96
-instance_create(xx, yy, obj_powerup_health)
+instance_create(xx, yy, choose(obj_powerup_health, obj_powerup_small))
 </string>
           </argument>
         </arguments>

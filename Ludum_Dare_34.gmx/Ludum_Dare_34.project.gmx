@@ -45,7 +45,7 @@
     <object>objects\game</object>
     <object>objects\obj_gameover</object>
     <object>objects\obj_powerup_health</object>
-    <object>objects\object8</object>
+    <object>objects\obj_powerup_small</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
