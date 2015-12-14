@@ -48,9 +48,9 @@
     <object>objects\obj_powerup_small</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_splash</room>
     <room>rooms\rm_game</room>
     <room>rooms\rm_end</room>
+    <room>rooms\rm_splash</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
