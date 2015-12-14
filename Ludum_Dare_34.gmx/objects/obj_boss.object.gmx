@@ -114,6 +114,9 @@ bul.spd = 4.5
             <kind>1</kind>
             <string>hlth -=5
 game.scr += 10
+with(other) {
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
