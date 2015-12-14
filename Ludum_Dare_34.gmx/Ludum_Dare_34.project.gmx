@@ -21,6 +21,7 @@
     <sprite>sprites\spr_player_state4</sprite>
     <sprite>sprites\spr_player_state5</sprite>
     <sprite>sprites\spr_powerup_health</sprite>
+    <sprite>sprites\spr_powerup_smaller</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -44,6 +45,7 @@
     <object>objects\game</object>
     <object>objects\obj_gameover</object>
     <object>objects\obj_powerup_health</object>
+    <object>objects\object8</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
